@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Formulaire HTML</title>
+
+        <style>
+        fieldset{
+            max-width:300px;
+            margin:20px auto;
+        }
+        </style>
+    </head>
+    <body>
+    <form action="#" method="GET"></form>
+    <form action="#" method="POST"></form>
+
+    <form id="formulaire" action="#" method="GET">
+        <fieldset>
+            <legend>Input text :</legend>
+            <label for="nom">Nom :</label>
+            <input placeholder="Votre nom" type="text" name="nom" id="nom" value="" required ><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Input hidden :</legend>
+            <input type="hidden" name="email" id="email" value="" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Input email :</legend>
+            <label for="email" >Email: </label>
+            <input type="email" name="email" id="email" value="" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Input password :</legend>
+            <label for="email" >Password: </label>
+            <input type="password" name="password" id="password" value="" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Input file :</legend>
+            <input type="file" name="myFile">
+        </fieldset>
+
+        <fieldset>
+            <legend>Textarea :</legend>
+            <label>Remarque : </label>
+            <textarea name="remarque" id="remarque" ></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox :</legend>
+            <input type="radio" name="Civilité" value="Monsieur">Monsieur<br>
+            <input type="radio" name="Civilité" value="Madame">Madame<br>
+            <input type="radio" name="Civilité" value="Mademoiselle" checked>Mademoiselle<br> 
+        </fieldset>
+
+        <fieldset>
+            <legend>checkbox :</legend>
+            <input type="checkbox" name="Vehicle" value="1">Moto<br>
+            <input type="checkbox" name="Vehicle" value="Madame">Voiture<br>
+            <input type="checkbox" name="Vehicle" value="B" checked>Vélo<br> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Select :</legend>
+            <select>
+                <option value="default" disabled selected>Sélectionner une marque</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Button :</legend>
+            <input type="submit" name="input-submit" id="" value="input" >
+            <button type="submit" name="button-submit" id="button-submit" >button</button>
+            <button type="reset" name="button-reset" id="button-reset" >Reset</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Liens utiles:</legend>
+            <a href="https://www.w3schools.com/html/html_forms.asp" title="W3school" >HTML Forms</a><br/>
+            <a href="https://www.w3schools.com/tags/att_input_type.asp" title="W3school" >HTML input type Attribute</a><br/>
+            <a href="https://www.w3schools.com/tags/tag_select.asp" title="W3school" >HTML select Tag</a>
+        </fieldset>
+        <fieldset>
+                <legend>Iframe Map :</legend>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.092762842361!2d4.457216715650975!3d50.42074329738621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2261bd787a80f%3A0x68cd1e16a7f40621!2sColl%C3%A8ge+Technique+des+Aum%C3%B4niers+du+Travail!5e0!3m2!1sfr!2sbe!4v1542550059516" 
+                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </fieldset>
+
+        <fieldset>
+            <legend> Autre Iframe :</legend>
+            <iframe src="http://www.fasterize.com/"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+            <p>Votre navigateur ne supporte pas les iframes.</p>
+            </iframe>
+        </fieldset>
+
+        <fieldset>
+            <legend> Autre Iframe https :</legend>
+            <iframe src="https://www.w3schools.com"  width="100%" height="450" frameborder="0" style="border:0">
+                <p>Your browser does not support iframes.</p>
+            </iframe>
+        </fieldset>
+
+        
+    </form>
+    </body>
+
+</html>
